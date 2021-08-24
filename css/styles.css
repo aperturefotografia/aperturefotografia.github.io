@@ -53,3 +53,21 @@ body {
   padding: 10px;
   height: auto;
 }
+
+
+#contato {
+  color: #ffffff;
+}
+
+#contato ul, li{
+  list-style: none;
+
+}
+
+.contato-detalhes {
+  margin-left: -30px;
+}
+
+#contato li i {
+  margin-right: 5px;
+}
