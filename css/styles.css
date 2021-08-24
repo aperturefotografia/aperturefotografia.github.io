@@ -71,3 +71,48 @@ body {
 #contato li i {
   margin-right: 5px;
 }
+
+#quemsomos  {
+  color: #ffffff;
+}
+
+#quemsomos .valores {
+  color: black !important;
+}
+#quemsomos .list-group-flush {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#quemsomos .list-group {
+  padding: 10px;
+}
+
+#quemsomos .list-group-item {
+  padding: 20px;
+}
+
+#quemsomos .list-group-item i {
+  font-size: 25px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: -15px;
+  color: #007bff;
+  background-color: rgba(0,0,0, 0.1);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#nossos-resultados {
+  background-color: #ffffff;
+  color: #010203;
+  height: 400px;
+}
+ #nossos-resultados .numeros{
+   font-size: 2.5rem;
+   color: #007bff;
+   font-weight: bold;
+ }
