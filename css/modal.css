@@ -9,19 +9,30 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: #010203;
   }
 
   .modal-content {
+    display: block;
     position: relative;
-    background-color: #fefefe;
+    background-color: #010203;
     margin: auto;
     padding: 0;
-    width: 90%;
-    max-width: 1200px;
+    width: 27%;
+    height: 40%;
+    margin-bottom: 10px;
     
   }
-  
+  .modal-content-wide {
+    display: block;
+    position: relative;
+    background-color: #010203;
+    margin: auto;
+    padding: 0;
+    width: 55%;
+    height: 80%;
+    margin-bottom: 60px;
+  }
 
   .close {
     color: white;
@@ -86,22 +97,6 @@
     margin-bottom: -4px;
   }
   
-  .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  
   img.hover-shadow {
     transition: 0.3s;
   }
@@ -109,3 +104,4 @@
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  
