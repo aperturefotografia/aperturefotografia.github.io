@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
-      
+       
        
     </head>
     <body id="page-top">
@@ -21,22 +21,21 @@
             </button>
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
               <ul class="navbar-nav ">
-              <li class="nav-item">
-                    <a class="nav-link" href="/view/retratos.php">Projetos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/view/cadastro.html">Projetos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/view/sobre.php">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/equipamento.php">Equipamento</a>
+                  <a class="nav-link" href="equipamento.html">Equipamento</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/loja.php">Loja</a>
+                  <a class="nav-link" href="loja.html">Loja</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/contato.php">Contato</a>
+                  <a class="nav-link" href="contato.html">Contato</a>
                 </li>    
-                 
               </ul>
             </div>  
           </nav>
@@ -50,12 +49,12 @@
                   
               </div>
               <div class="col-lg-12 login-title">
-                  Faça seu login
+                  Faça seu cadastro
               </div>
 
               <div class="col-lg-12 login-form">
                   <div class="col-lg-12 login-form">
-                      <form action="/model/login_function.php" method="POST">
+                      <form action="/model/Usuario.php" method="POST">
                         <div class="form-group">
                           <label class="form-control-label" for="username">Nome de Usuário</label>
                           <input
@@ -65,7 +64,15 @@
                             name="username"
                           />
                         </div>
-                        
+                        <div class="form-group">
+                          <label class="form-control-label" for="email">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                          />
+                        </div>
                         <div class="form-group">
                           <label class="form-control-label" for="password">Senha</label>
                           <input
@@ -78,21 +85,8 @@
                     
                           <div class="col-lg-12  login-button">
                          
-                          <input type="submit" name="sub" value="Login" class="btn btn-outline-light a" />
+                          <input type="submit" value="Cadastrar" class="btn btn-outline-light a" />
                         </div>
-                        <?php 
-                            if(isset($_REQUEST["err"]))
-                            $msg="Usuário ou senha inválido.";
-                        ?>
-                            <p style="color:red;">
-                        <?php if(isset($msg))
-                            {
-                                
-                            echo $msg;
-                            }
-                            ?>
-
-                            </p>
                       </form>
                   </div>
               

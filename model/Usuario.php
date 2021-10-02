@@ -14,8 +14,7 @@
 		$stmt = $conn->prepare("insert into cadastro(username, email, password) values(?, ?, ?)");
 		$stmt->bind_param("sss", $username, $email, $password);
 		$execval = $stmt->execute();
-		header('Location: ../index.php');
-
+		
 		$stmt->close();
 		$conn->close();
 	}
