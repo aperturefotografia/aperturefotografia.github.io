@@ -21,7 +21,7 @@
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
-    <a class="navbar-brand" href="index.html"><img src="../assets/logo.png" alt="Logo do site"style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
+    <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo do site"style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,7 +43,7 @@
               <a class="nav-link" href="/view/contato.php">Contato</a>
             </li>    
             <li class="nav-item">
-            <a class="nav-link" href="/controller/logout.php">Logout</a>
+            <a class="nav-link" href="/model/logout.php">Logout</a>
             </li>
         </ul>
     </div>
