@@ -42,7 +42,7 @@
               <a class="nav-link" href="/view/contato.php">Contato</a>
             </li>    
             <li class="nav-item">
-              <a class="nav-link" href="/model/logout.php">Logout</a>
+              <a class="nav-link" href="/controller/logout.php">Logout</a>
             </li>  
             </ul>
           </div>  

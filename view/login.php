@@ -79,6 +79,7 @@
                           <div class="col-lg-12  login-button">
                          
                           <input type="submit" name="sub" value="Login" class="btn btn-outline-light a" />
+                          <p class="text-light">Novo usuário? <a href="cadastro.php">Faça seu cadastro</a></p>
                         </div>
                         <?php 
                             if(isset($_REQUEST["err"]))
