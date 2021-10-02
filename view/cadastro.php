@@ -11,7 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
        
-       
+    
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
@@ -22,20 +22,23 @@
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
               <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="retratos.html">Projetos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="equipamento.html">Equipamento</a>
+                  <a class="nav-link" href="/view/retratos.php">Projetos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="loja.html">Loja</a>
+                  <a class="nav-link" href="/view/sobre.php">Sobre</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contato.html">Contato</a>
-                </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="/view/equipamento.php">Equipamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/view/loja.php">Loja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/view/contato.php">Contato</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="/view/login.php">Login</a>
+              </li>  
               </ul>
             </div>  
           </nav>
@@ -49,12 +52,12 @@
                   
               </div>
               <div class="col-lg-12 login-title">
-                  Faça seu login
+                  Faça seu cadastro
               </div>
 
               <div class="col-lg-12 login-form">
                   <div class="col-lg-12 login-form">
-                      <form action="/model/Usuario.php" method="POST">
+                      <form action="/model/cadastro.php" method="POST">
                         <div class="form-group">
                           <label class="form-control-label" for="username">Nome de Usuário</label>
                           <input
@@ -64,7 +67,15 @@
                             name="username"
                           />
                         </div>
-                        
+                        <div class="form-group">
+                          <label class="form-control-label" for="email">Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                          />
+                        </div>
                         <div class="form-group">
                           <label class="form-control-label" for="password">Senha</label>
                           <input

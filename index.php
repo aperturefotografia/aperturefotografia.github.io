@@ -10,9 +10,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href="/view/css/styles.css" rel="stylesheet" />
-       
+        <?php 
+        session_start ();
+        if(!isset($_SESSION["login"]))
+        
+          header("location: /view/login.php"); 
+        ?>
     </head>
     <body id="page-top">
+      
         <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
             <a class="navbar-brand" href="#page-top" ><img src="/assets/logo.png" alt="Logo do site" style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -21,22 +27,22 @@
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
               <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" href="/view/cadastro.html">Projetos</a>
+                    <a class="nav-link" href="/view/retratos.php">Projetos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/view/sobre.html">Sobre</a>
+                    <a class="nav-link" href="/view/sobre.php">Sobre</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/equipamento.html">Equipamento</a>
+                  <a class="nav-link" href="/view/equipamento.php">Equipamento</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/loja.html">Loja</a>
+                  <a class="nav-link" href="/view/loja.php">Loja</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/contato.html">Contato</a>
+                  <a class="nav-link" href="/view/contato.php">Contato</a>
                 </li>    
                 <li class="nav-item">
-                  <a class="nav-link" href="/view/login.html">Login</a>
+                <a class="nav-link" href="/model/logout.php">Logout</a>
                 </li>
               </ul>
             </div>  
