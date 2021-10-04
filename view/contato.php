@@ -21,7 +21,7 @@
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
-    <a class="navbar-brand" href="../index.php"><img src="../assets/logo.png" alt="Logo do site"style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
+    <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="Logo do site"style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -66,12 +66,12 @@
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label class="form-label mb-1 text-2">Nome</label>
-                            <input type="text" maxlength="100" class="form-control text-3 h-auto py-2" name="username" id="username" required="true">
+                            <label class="form-label mb-1 text-2">Nome Completo</label>
+                            <input type="text" maxlength="100" class="form-control text-3 h-auto py-2" name="name" id="name" required="true">
                         </div>
                         <div class="form-group col-md-6">
                             <label class="form-label mb-1 text-2">Endereço de Email</label>
-                            <input type="text" maxlength="100" class="form-control text-3 h-auto py-2" name="email" id="email" required="true">
+                            <input type="email" maxlength="100" class="form-control text-3 h-auto py-2" name="email" id="email" required="true">
                         </div>
                     </div>
                     <div class="row">
