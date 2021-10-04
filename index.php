@@ -57,7 +57,7 @@
                         <div class="text-light text-center text-lg-left">
                             <h4>Retratos</h4>
                             <p class="text-white-50 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <a class="btn btn-outline-light a" href="/view/retratos.html" role="button">Ver Mais</a>
+                            <a class="btn btn-outline-light a" href="/view/retratos.php" role="button">Ver Mais</a>
                         </div>
                     </div>
                 </div>
