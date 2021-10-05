@@ -1,12 +1,11 @@
+
 <?php
   
-
-    $username = $_POST['username'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	
+  include("config.php"); 
+  include('../controller/cadastro.php');
+    
 	// Database connection
-	$conn = new mysqli('localhost','root','password','aperture');
+	$conn = new mysqli($databaseHost,$databaseUsername,$databasePassword,$databaseName);
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
