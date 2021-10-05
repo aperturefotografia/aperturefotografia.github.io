@@ -19,9 +19,35 @@
     </head>
     <body id="page-top">
       
-    <?php
-       require  './view/navigation.php';
-    ?>
+        <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
+            <a class="navbar-brand" href="#page-top" ><img src="/assets/logo.png" alt="Logo do site" style="height: 20px; margin-right: 10px;">Aperture Fotografia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="/view/retratos.php">Projetos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/view/sobre.php">Sobre</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/view/equipamento.php">Equipamento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/view/loja.php">Loja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/view/contato.php">Contato</a>
+                </li>    
+                <li class="nav-item">
+                <a class="nav-link" href="/model/logout.php">Logout</a>
+                </li>
+              </ul>
+            </div>  
+          </nav>
+
         <section class="content" id="projetos">
          <div class="container px-4 px-lg-5">
                 
@@ -70,9 +96,8 @@
             </div>
         </section>
 
-<?php
-require './view/footer.php'?>
-<script src="js/scripts.js"></script>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5"> &copy; Aperture Fotografia 2021</div></footer>
+        <script src="js/scripts.js"></script>
 
     </body>
 </html>
